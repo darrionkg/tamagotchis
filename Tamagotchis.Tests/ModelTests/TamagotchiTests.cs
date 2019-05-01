@@ -31,5 +31,13 @@ namespace Tamagotchis.Tests
       }
       Assert.AreEqual(6, newTamagotchi.FoodLevel);
     }
+
+    [TestMethod]
+    public void AddPoints_AddsPointsWhenTaskPerformed_Int()
+    {
+      Tamagotchi newTamagotchi = new Tamagotchi();
+      newTamagotchi.Pet();
+      Assert.AreEqual(11, newTamagotchi.HappinessLevel);
+    }
   }
 }
